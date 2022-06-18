@@ -33,8 +33,9 @@
             </p>
           </div>
           <div>
-            <form class="form" action="">
-              <input
+            <form>
+              <div class="input-section">
+                <input
                 type="text"
                 id="fname"
                 name="fname"
@@ -42,8 +43,10 @@
                 required
               />
               <img src="./images/icon-error.svg" alt="error icon">
-    
-              <input
+              <small>First Name cannot be  empty</small>
+              </div>
+              <div class="input-section">
+                <input
                 type="text"
                 id="lname"
                 name="lname"
@@ -51,17 +54,21 @@
                 required
               />
               <img src="./images/icon-error.svg" alt="error icon">
-              
-              <input
-                type="email"
-                id="lname"
-                name="lname"
-                placeholder="Email Address"
-                required
-              />
-              <img src="./images/icon-error.svg" alt="error icon">
-    
-              <input
+              <small>Last Name cannot be  empty</small>
+              </div>
+          <div class="input-section">
+            <input
+            type="email"
+            id="lname"
+            name="lname"
+            placeholder="Email Address"
+            required
+          />
+          <img src="./images/icon-error.svg" alt="error icon">
+          <small>Looks like this is not an email</small>
+          </div>
+          <div class="input-section error">
+            <input
                 type="password"
                 id="lname"
                 name="lname"
@@ -69,7 +76,21 @@
                 required
               />
               <img src="./images/icon-error.svg" alt="error icon">
-    
+              <small>Password cannot be  empty</small>
+          </div>
+          <div class="input-section">
+            <input
+            type="password"
+            id="lname"
+            name="lname"
+            placeholder="Password"
+            required
+          />
+          <img src="./images/icon-error.svg" alt="error icon">
+          <small>Password cannot be  empty</small>
+
+          </div>
+            
               <button>Claim your free trial</button>
     
               <p class="terms">

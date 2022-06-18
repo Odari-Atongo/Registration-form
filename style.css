@@ -70,11 +70,42 @@ form {
 input {
   display: block;
   width: 100%;
-  padding: 1.5em 3em 1.5em 3em;
-  margin-bottom: 1em;
+  padding: 1em 3em;
   border: 0.5px solid hsl(246, 25%, 77%);
   border-radius: 5px;
   font-weight: 750;
+}
+/* The input container  */
+.input-section{
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding: 7px;
+  position: relative;
+}
+/* The error icon  */
+.input-section img{
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  visibility: hidden;
+}
+.input-section small{
+  position:absolute;
+  left:18.5em;
+  visibility: hidden;
+}
+.input-section.error input{
+  border-color: var(--bg-color);
+  color:var(--bg-color);
+
+}
+
+.input-section.error img{
+  visibility: visible;
+}
+.input-section.error small{
+  visibility: visible;
+  color: var(--bg-color);
 }
 /* The  green button in the form section  */
 button {
